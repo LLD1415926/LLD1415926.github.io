@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Hexo
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/style/github.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div class="container">
+        <div class="header">
+    <!-- <div class="logo">
+        <a href="/">Hexo</a>
+    </div> -->
+    <div class="logo">
+        <img src="/images/logo.png" alt="Logo">
+    </div>
+    <div class="nav">
+        <ul class="menu">
+            
+                <li class="menu-item">
+                    <a href="/" class="menu-item-link">
+                        Home
+                    </a>
+                </li>
+            
+                <li class="menu-item">
+                    <a href="https://github.com/loveminimal" target="_blank" rel="noopener" class="menu-item-link">
+                        Github
+                    </a>
+                </li>
+                
+        </ul>
+    </div>
+</div>
+        <div class="article">
+    <!-- <div class="article-title">
+        <h2>
+            Linux配置国内的软件源
+        </h2>
+    </div> -->
+    <div class="article-meta">
+        <div class="article-date">
+            <i class="fas fa-edit"></i>
+            2020/04/15 Wed 19:14&nbsp;&nbsp;&nbsp;
+            <span class="just-a-temp"><span>
+            <i class="fas fa-redo"></i>
+            2020/04/15 Wed 19:14
+        </div>
+    </div>
+    <div class="article-content">
+        <h2 id="Linux配置国内的软件源"><a href="#Linux配置国内的软件源" class="headerlink" title="Linux配置国内的软件源"></a>Linux配置国内的软件源</h2><pre><code>$ sudo pacman-mirrors -i -c China -m rank</code></pre><h3 id="1-勾选-heshiyuan，然后按-OK-键两次。"><a href="#1-勾选-heshiyuan，然后按-OK-键两次。" class="headerlink" title="1.勾选 heshiyuan，然后按 OK 键两次。"></a>1.勾选 heshiyuan，然后按 OK 键两次。</h3><h3 id="2-最后刷新缓存："><a href="#2-最后刷新缓存：" class="headerlink" title="2.最后刷新缓存："></a>2.最后刷新缓存：</h3><pre><code>$ sudo pacman -Syy</code></pre><h3 id="1-添加-Archlinux-中文社区仓库"><a href="#1-添加-Archlinux-中文社区仓库" class="headerlink" title="1.添加 Archlinux 中文社区仓库"></a>1.添加 Archlinux 中文社区仓库</h3><h3 id="2-etc-pacman-conf-文件末尾添加以下两行："><a href="#2-etc-pacman-conf-文件末尾添加以下两行：" class="headerlink" title="2./etc/pacman.conf 文件末尾添加以下两行："></a>2./etc/pacman.conf 文件末尾添加以下两行：</h3><pre><code>[archlinuxcn]
+Server=https://mirrors.sjtug.sjtu.edu.cn/archlinux-cn/$arch</code></pre><h3 id="之后安装-Archlinuxcn-keyring-包导入-GPG-key。"><a href="#之后安装-Archlinuxcn-keyring-包导入-GPG-key。" class="headerlink" title="之后安装 Archlinuxcn-keyring 包导入 GPG key。"></a>之后安装 Archlinuxcn-keyring 包导入 GPG key。</h3><pre><code>$ sudo pacman -Sy archlinuxcn-keyring</code></pre><h2 id="安装-aria2-并加速源下载"><a href="#安装-aria2-并加速源下载" class="headerlink" title="安装 aria2 并加速源下载"></a>安装 aria2 并加速源下载</h2><pre><code>$ sudo pacman -S aria2</code></pre><h4 id="必备-Software"><a href="#必备-Software" class="headerlink" title="必备 Software"></a>必备 Software</h4><p>1.iease-music<br>2.spotify<br>3.obs-studio<br>4.typora<br>5.Google-chrome<br>6.baka-mplayer<br>7.emacs<br>8.qbittorrent</p>
+
+    </div>
+
+    <div class="totop">ToTOP</div>
+</div>
+        <div class="footer">
+    <a href="#">
+        2018 <i class="fab fa-studiovinari"></i> John Doe <i class="fas fa-angle-double-up"></i>
+    </a>
+</div>
+
+
+<script src="/js/totop.js"></script>
+
+
+<script src="/js/search.js"></script>
+
+    </div>
+</body>
+
+</html>
